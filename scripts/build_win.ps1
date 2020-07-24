@@ -1,4 +1,5 @@
-$BUILD_ARCH="win-x64"
+Write-Output "dotnet publish -c release -r win-x86"
+dotnet publish -c release -r win-x86
 
-echo "dotnet publish -f netcoreapp2.1 -c release -r $BUILD_ARCH"
-dotnet publish -f netcoreapp2.1 -c release -r $BUILD_ARCH
+Write-Output "dotnet publish -c release -r  winx64"
+dotnet publish -c release -r win-x64
