@@ -22,7 +22,7 @@ jobs:
     - name: Build
       run: dotnet build --configuration Release --no-restore
     - name: Test
-      run: dotnet test --no-restore --verbosity normal CyLRTests/ /p:CollectCoverage=true /p:CoverletOutputFormat="lcov" /p:CoverletOutput=./lcov
+      run: dotnet test --no-restore --verbosity normal CyLRTests/ /p:CollectCoverage=true /p:CoverletOutputFormat="lcov" /p:CoverletOutput=../lcov
     - name: Coveralls GitHub Action
       uses: coverallsapp/github-action@v1.1.1
       with:
